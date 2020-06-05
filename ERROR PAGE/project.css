@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+*{padding: 0%;margin: 0%;box-sizing: border-box;font-family:  'Lato', sans-serif;color: white;}
+.navigation{background-image: linear-gradient(to bottom,#2c003e, #512b58 ); width: 100%;height: 100%;}
+.navbar{width: 100%;height: 10vh;}
+.navbar ul{display: flex;list-style: none;}
+.navbar li{padding: 20px;font-size: 14px;color: rgba(255,255,255,0.8);transition: .2s;}
+.navbar li:hover{color: white;cursor: pointer;}
+
+.text{width: 100%;height:80vh;display: flex;}
+.error{width: 40%;height: 50%;margin: auto;text-align: center;}
+.error h1{font-size: 100px;animation: movement 1s ease-in infinite;}
+.error p{font-size: 20px;color: white;}
+.error .home{margin: 50px 0;}
+.home a{display: inline-block;padding: 10px 20px;border: 2px solid white;text-decoration: none;border-radius: 20px;transition: .4s;}
+.home a:hover{background-color: white;color:#512b58;font-weight: bold;}
+.home a:focus{outline: none;}
+
+@keyframes movement{
+    0%,100%{opacity: 0.3;}
+    50%{opacity: 1;}
+
+}
+.footer{padding: 20px;height: 10vh;width: 100%;display: flex;justify-content: flex-end;font-size: 14p;}
+.footer p{color: white;}
+
+@media(max-width:900px){
+    .navbar ul{display: none;}
+    .error h1{font-size: 50px;}
+    .error p{font-size: 16px;}
+    .footer{display: block;height: 10vh;}
+    .home a:focus{outline: none;}
+}
